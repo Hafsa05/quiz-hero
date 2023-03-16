@@ -2,12 +2,23 @@
 <html lang="en" data-theme="light">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Quiz Hero Blog</title>
-
-	<script src="https://cdn.tailwindcss.com"></script>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-white font-common">
@@ -32,7 +43,7 @@
 	<main>
 		<h2 class="underline text-center font-bold text-3xl mt-5">Assignment's Question - Answer</h2>
 		<div class="font-semibold text-2xl mt-10 ml-10">
-			<h2>Question - 1. The differences among map(), filter(), forEach() and find</h2>
+			<h2>Question - 1. What is the differences among map(), filter(), forEach() and find.</h2>
 			<p class="text-xl mt-5 ml-5">
 				In JavaScript, map(), filter(), forEach(), and find() are four commonly used array methods that help
 				developers manipulate and work with arrays. Here's a detailed comparison of these four methods:<br> <br>
@@ -59,7 +70,7 @@
 		</div>
 
 		<div class="font-semibold text-2xl mt-10 ml-10">
-			<h2>Question - 2. Differences among Local Storage, Session Storage And Cookies.</h2>
+			<h2>Question - 2. What is the differences among Local Storage, Session Storage And Cookies.</h2>
 			<p class="text-xl mt-5 ml-5">
 				Local Storage, Session Storage, and Cookies are all ways to store data within the user's browser, but
 				they differ in their scope, persistence, and purpose. <br>
@@ -91,7 +102,7 @@
 		</div>
 
 		<div class="font-semibold text-2xl mt-10 ml-10">
-			<h2>Question - 3. What is event loop in JavaScript and how does it works?</h2>
+			<h2>Question - 3. What is the event loop in JavaScript and how does it works?</h2>
 			<p class="text-xl mt-5 ml-5">
 				In JavaScript, the event loop is a mechanism that manages the execution of code by continuously
 				monitoring the call stack and the task queue. The event loop allows JavaScript to be single-threaded
@@ -117,27 +128,32 @@
 		</div>
 
 		<div class="font-semibold text-2xl mt-10 ml-10">
-			<h2>Question - 4. quizTimer()?</h2>
+			<h2>Question - 4. What is the purpose of the function quizTimer()?</h2>
 			<p class="text-xl mt-5 ml-5">
-				daskdjhfiuerwhjvon
-				<br>
-				jdbk
-
-				<br>jherwgh
+				The function quizTimer has only one parameter: dismiss. This function's goal is to generate a quiz countdown timer. If the function returns true, it clears the interval timer and ends the countdown.Otherwise, it starts an interval timer and updates the timer display every second. The code within the interval timer function first picks an HTML element with the id "count" and then calculates the remaining minutes and seconds based on a variable named count. If required, the minutes and seconds are formatted with leading zeros before being shown within the specified HTML element. If the count variable is more than 60, the code alternates the color of the text displayed within the HTML element every two seconds by adding and deleting CSS classes. <br>
+				Basically, this code is used to generate a quiz countdown timer with a visual display.
 			</p>
 		</div>
 
 		<div class="font-semibold text-2xl mt-10 ml-10">
-			<h2>Question - 5. chooseQuiz()?</h2>
+			<h2>Question - 5. What is the purpose of the function chooseQuiz()?</h2>
 			<p class="text-xl mt-5 ml-5">
-				daskdjhfiuerwhjvon
+				The chooseQuiz function requires two parameters, 'index' and 'givenAns'. The function's goal is to save
+				the user's answer to a quiz question and update the list of answers accordingly. Using the Array.find
+				method, the function first determines if the solution to the current quiz question is already saved in
+				the answers array. If the answer exists, it replaces the existing answer with the new one by using a for of loop to go over the answers array and identifying the matching answer object using its id attribute. If the answer does not already exist in the answers array, the function produces a new answer object by dividing the quizData[index] object and adding the givenAns attribute. After updating the answers array, the function calls another function called displayAnswers using the answers array as an input. displayAnswers's goal is to refresh the user interface to show the current	list of answers.
 				<br>
-				jdbk
-
-				<br>jherwgh
+				To summarize, this code allows the user to choose an answer to a quiz question and save it in an array.
+				If the user changes their answer, the function updates the previously saved answer. The function also
+				refreshes the user interface with the current set of replies.
 			</p>
 		</div>
-
+	</main>
+	<!-- Footer section start -->
+	<footer class="py-10 text-center text-sm">
+		Copyright © 2023 Quiz Hero All Rights Reserved.
+	</footer>
+	<!-- Footer section end -->
 
 	</main>
 </body>
