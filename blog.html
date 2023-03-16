@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz Hero Blog</title>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white font-common">
+	<!-- Header/Navbar section start -->
+	<header class="h-16 flex items-center shadow-sm">
+		<nav class="flex justify-between items-center w-9/12 mx-auto">
+			<div class="text-zinc-800 font-bold uppercase">
+				<h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+				<p class="text-[10px] font-normal capitalize -mt-1">
+					Get ready to Quiz and be amazed!
+				</p>
+			</div>
+			<a href="index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+				<button>
+					Home
+				</button>
+			</a>
+		</nav>
+	</header>
+	<!-- Header/Navbar section end -->
+
+	<main>
+		<h2 class="underline text-center font-bold text-3xl mt-5">Assignment's Question - Answer</h2>
+		<div class="font-semibold text-2xl mt-10 ml-10">
+			<h2>Question - 1. The differences among map(), filter(), forEach() and find</h2>
+			<p class="text-xl mt-5 ml-5">
+				In JavaScript, map(), filter(), forEach(), and find() are four commonly used array methods that help
+				developers manipulate and work with arrays. Here's a detailed comparison of these four methods:<br> <br>
+
+				i. map(): The map() method is used to create a new array by performing an operation on each element of
+				an
+				existing array. The resulting array will have the same length as the original array. It returns a new
+				array without modifying the original array.<br>
+
+				ii. filter(): The filter() method is used to create a new array by filtering out elements from an
+				existing array that don't meet a certain condition. The resulting array may have a different length than
+				the original array. It returns a new array without modifying the original array. <br>
+
+				iii. forEach(): The forEach() method is used to iterate over an array and perform an operation on each
+				element. It doesn't return a new array and instead modifies the original array. <br>
+
+				iv. find(): The find() method is used to find the first element in an array that meets a certain
+				condition. It returns the first matching element or undefined if no element is found.<br>
+
+				In summary, map() is used to transform an array, filter() is used to filter an array, forEach() is used
+				to loop over an array and execute a function for each element, and find() is used to find the first
+				element in an array that meets a certain condition.
+			</p>
+		</div>
+
+		<div class="font-semibold text-2xl mt-10 ml-10">
+			<h2>Question - 2. Differences among Local Storage, Session Storage And Cookies.</h2>
+			<p class="text-xl mt-5 ml-5">
+				Local Storage, Session Storage, and Cookies are all ways to store data within the user's browser, but
+				they differ in their scope, persistence, and purpose. <br>
+
+				Local Storage: The data stored in Local Storage persists even after the user closes the browser or shuts
+				down the computer. The data is stored in the user's browser and can be accessed by any page in the same
+				domain. The data is available until the user manually clears it or the web application deletes it. Local
+				Storage is designed for long-term storage of data that needs to persist across sessions. <br>
+
+				Session Storage: The data stored in Session Storage is only available for the duration of the user's
+				browser session. The data is stored in the user's browser and can be accessed by any page in the same
+				domain. Once the user closes the browser or shuts down the computer, the data is automatically cleared.
+				Session Storage is designed for short-term storage of data that needs to be cleared when the user closes
+				the browser. <br>
+
+				Cookies: Cookies are small text files that are stored on the user's computer by the web browser. They
+				can be used to store user preferences, login information, and other data. Cookies can be set to expire
+				after a certain period of time or when the user closes the browser. Cookies can be accessed by any page
+				on the same domain that sets the cookie. Cookies are typically used for maintaining user sessions and
+				storing user preferences. <br>
+				<br>
+				Finally we ca say, Local Storage and Session Storage are used for storing data within the user's
+				browser,
+				accessible by any page in the same domain, with Local Storage designed for long-term storage and Session
+				Storage designed for short-term storage. Cookies are also used for storing data within the user's
+				browser but are typically used for maintaining user sessions and storing user preferences. Cookies can
+				also be set to expire after a certain period of time or when the user closes the browser.
+			</p>
+		</div>
+
+		<div class="font-semibold text-2xl mt-10 ml-10">
+			<h2>Question - 3. What is event loop in JavaScript and how does it works?</h2>
+			<p class="text-xl mt-5 ml-5">
+				In JavaScript, the event loop is a mechanism that manages the execution of code by continuously
+				monitoring the call stack and the task queue. The event loop allows JavaScript to be single-threaded
+				while still being able to handle asynchronous code execution, such as event handlers, timers, and
+				callbacks. <br>
+
+				The event loop works as follows: <br>
+
+				i. The JavaScript engine starts by executing the code on the main thread and pushing it onto the call
+				stack. <br>
+
+				ii. If the code encounters an asynchronous operation, such as a timer or a network request, it will be
+				removed from the call stack and added to the task queue. <br>
+
+				iii. The event loop continuously monitors the call stack and the task queue. When the call stack is empty,
+				the event loop will take the first task from the task queue and push it onto the call stack. <br>
+
+				iv. The code in the task is then executed, and any new asynchronous operations are added to the task queue. <br>
+
+				v. This process repeats continuously, allowing JavaScript to handle asynchronous operations while still
+				being single-threaded.
+			</p>
+		</div>
+
+		<div class="font-semibold text-2xl mt-10 ml-10">
+			<h2>Question - 4. quizTimer()?</h2>
+			<p class="text-xl mt-5 ml-5">
+				daskdjhfiuerwhjvon
+				<br>
+				jdbk
+
+				<br>jherwgh
+			</p>
+		</div>
+
+		<div class="font-semibold text-2xl mt-10 ml-10">
+			<h2>Question - 5. chooseQuiz()?</h2>
+			<p class="text-xl mt-5 ml-5">
+				daskdjhfiuerwhjvon
+				<br>
+				jdbk
+
+				<br>jherwgh
+			</p>
+		</div>
+
+
+	</main>
+</body>
+
+</html>
